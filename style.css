@@ -1,0 +1,161 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Navegação */
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Container Principal */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Categorias e Artigos */
+.categories ul, .recipes {
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li, .recipes article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categories ul li a, .recipes article h3 {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.categories ul li a:hover {
+    color: #4CAF50;
+}
+
+.recipes article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form form input, .contact-form form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Estilo Responsivo para Telas Maiores */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        margin: 0 20px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .categories ul li, .recipes article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .categories ul li a, .recipes article h3 {
+        font-size: 1.5rem;
+    }
+
+    .recipes article p {
+        font-size: 1.1rem;
+    }
+}
+

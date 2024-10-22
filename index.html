@@ -98,7 +98,7 @@
             }
         }
 
-        @media (min-width: 1024px) {
+        /* @media (min-width: 1024px) {
             .container {
                 max-width: 960px;
             }
@@ -113,7 +113,7 @@
             footer {
                 padding: 2rem;
             }
-        }
+        } */
 
         /* Google AdSense styling */
         .ads-container {
@@ -136,45 +136,29 @@
     </header>
 
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Receitas Salgadas</a>
-        <a href="#">Receitas Doces</a>
-        <a href="#">Contato</a>
+        <a href="index.html">Início</a>
+        <a href="receitas-salgadas.html">Receitas Salgadas</a>
+        <a href="receitas-doces.html">Receitas Doces</a>
+        <a href="sobremesas.html">Sobremesas</a>
+        <a href="rapidas.html">Receitas Rápidas</a>
+        <a href="contato.html">Contato</a>
     </nav>
 
     <div class="container">
-        <article class="recipe">
-            <h2>Receita de Bolo de Chocolate Simples</h2>
-            <p>Este bolo de chocolate é fácil de preparar, perfeito para o lanche ou sobremesa!</p>
-            
-            <h3>Ingredientes:</h3>
+        <section class="intro">
+            <h2>Bem-vindo ao Receitas Fáceis</h2>
+            <p>Encontre receitas deliciosas e fáceis de preparar, perfeitas para o seu dia a dia. Explore nossas categorias e descubra receitas para todas as ocasiões.</p>
+        </section>
+
+        <section class="categories">
+            <h3>Categorias</h3>
             <ul>
-                <li>3 ovos</li>
-                <li>2 xícaras de farinha de trigo</li>
-                <li>1 xícara de açúcar</li>
-                <li>1 xícara de achocolatado</li>
-                <li>1 colher de fermento em pó</li>
+                <li><a href="receitas-salgadas.html">Receitas Salgadas</a></li>
+                <li><a href="receitas-doces.html">Receitas Doces</a></li>
+                <li><a href="sobremesas.html">Sobremesas</a></li>
+                <li><a href="rapidas.html">Receitas Rápidas</a></li>
             </ul>
-
-            <h3>Modo de Preparo:</h3>
-            <ol>
-                <li>Preaqueça o forno a 180°C.</li>
-                <li>Misture todos os ingredientes até obter uma massa homogênea.</li>
-                <li>Despeje a massa em uma forma untada e leve ao forno por cerca de 30 minutos.</li>
-                <li>Retire do forno, deixe esfriar e sirva!</li>
-            </ol>
-        </article>
-
-        <!-- Google AdSense Ad -->
-        <div class="ads-container">
-            <ins class="adsbygoogle"
-                style="display:inline-block;width:100%;max-width:728px;height:90px"
-                data-ad-client="ca-pub-XXXXXX"
-                data-ad-slot="XXXXXX"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+        </section>
     </div>
 
     <footer>
