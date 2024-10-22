@@ -125,37 +125,64 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Estilo Responsivo para Telas Maiores */
-@media (min-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
+
+@media (max-width: 768px) {
+    /* Esconder o menu padrão em telas menores */
+    nav {
+        display: none;
     }
 
-    header p {
+    /* Estilo para o botão do menu (hambúrguer) */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333;
+    }
+
+    /* Drawer Menu - menu deslizante */
+    .drawer {
+        position: fixed;
+        top: 0;
+        right: -250px; /* Menu inicialmente fora da tela */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: white;
+        transition: right 0.3s ease;
+        padding-top: 60px;
+    }
+
+    /* Estilo dos links no drawer menu */
+    .drawer a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
         font-size: 1.2rem;
+        text-align: center;
+        border-bottom: 1px solid #4CAF50;
     }
 
-    nav a {
-        font-size: 1.2rem;
-        margin: 0 20px;
+    .drawer a:hover {
+        background-color: #4CAF50;
     }
 
-    .container {
-        width: 80%;
+    /* Drawer aberto */
+    .drawer.open {
+        right: 0; /* Move o menu para dentro da tela */
     }
 
-    .categories ul li, .recipes article {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .categories ul li a, .recipes article h3 {
-        font-size: 1.5rem;
-    }
-
-    .recipes article p {
-        font-size: 1.1rem;
+    /* Fechar Drawer */
+    .drawer .close-btn {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
     }
 }
-
