@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deliciosas receitas para todos os gostos! Encontre receitas rápidas e práticas para o seu dia a dia.">
-    <title>Receitas Fáceis</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Receitas fáceis e deliciosas para o dia a dia. Encontre receitas de bolos, sobremesas, pratos salgados e mais!">
+    <meta name="keywords" content="receitas, bolos, sobremesas, pratos salgados, receitas fáceis, receitas rápidas">
+    <meta name="author" content="Seu Nome">
+    
+    <!-- Open Graph Meta Tags (para redes sociais) -->
+    <meta property="og:title" content="Receitas Fáceis - Delícias para o Dia a Dia">
+    <meta property="og:description" content="Encontre receitas rápidas, práticas e deliciosas. Bolo de chocolate, sobremesas e muito mais!">
+    <meta property="og:image" content="URL_da_imagem_compartilhada.jpg">
+    <meta property="og:url" content="https://seuusuario.github.io/receitas">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Receitas Fáceis">
+    <meta name="twitter:description" content="Receitas fáceis para todos os momentos!">
+    <meta name="twitter:image" content="URL_da_imagem_compartilhada.jpg">
+    
+    <title>Receitas Fáceis - Delícias Rápidas e Práticas</title>
+    
     <style>
+        /* Estilo base: Mobile First */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,18 +46,17 @@
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
+            font-size: 0.9rem;
         }
         .container {
-            max-width: 1200px;
-            margin: 2rem auto;
             padding: 0 1rem;
         }
         .recipe {
             background-color: white;
             padding: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -46,7 +65,60 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        /* Ajustes de layout para telas maiores */
+        @media (min-width: 600px) {
+            nav a {
+                font-size: 1rem;
+                margin: 0 15px;
+            }
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            footer {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                padding: 1rem 0;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+            .container {
+                max-width: 750px;
+            }
+            .recipe {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 960px;
+            }
+            .recipe {
+                display: flex;
+                justify-content: space-between;
+                padding: 2rem;
+            }
+            .recipe ul, .recipe ol {
+                flex-basis: 48%;
+            }
+            footer {
+                padding: 2rem;
+            }
+        }
+
+        /* Google AdSense styling */
+        .ads-container {
+            margin: 1.5rem 0;
+            text-align: center;
         }
     </style>
 
@@ -60,7 +132,7 @@
 
     <header>
         <h1>Receitas Fáceis</h1>
-        <p>Encontre as melhores receitas para o seu dia a dia!</p>
+        <p>Delícias rápidas e práticas para todos os gostos!</p>
     </header>
 
     <nav>
@@ -71,9 +143,10 @@
     </nav>
 
     <div class="container">
-        <div class="recipe">
-            <h2>Receita de Bolo de Chocolate</h2>
-            <p>Um delicioso bolo de chocolate fofinho e fácil de fazer!</p>
+        <article class="recipe">
+            <h2>Receita de Bolo de Chocolate Simples</h2>
+            <p>Este bolo de chocolate é fácil de preparar, perfeito para o lanche ou sobremesa!</p>
+            
             <h3>Ingredientes:</h3>
             <ul>
                 <li>3 ovos</li>
@@ -82,18 +155,20 @@
                 <li>1 xícara de achocolatado</li>
                 <li>1 colher de fermento em pó</li>
             </ul>
+
             <h3>Modo de Preparo:</h3>
             <ol>
                 <li>Preaqueça o forno a 180°C.</li>
                 <li>Misture todos os ingredientes até obter uma massa homogênea.</li>
-                <li>Despeje a massa em uma forma untada e leve ao forno por 30 minutos.</li>
+                <li>Despeje a massa em uma forma untada e leve ao forno por cerca de 30 minutos.</li>
+                <li>Retire do forno, deixe esfriar e sirva!</li>
             </ol>
-        </div>
+        </article>
 
         <!-- Google AdSense Ad -->
-        <div style="text-align: center;">
+        <div class="ads-container">
             <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
+                style="display:inline-block;width:100%;max-width:728px;height:90px"
                 data-ad-client="ca-pub-XXXXXX"
                 data-ad-slot="XXXXXX"></ins>
             <script>
